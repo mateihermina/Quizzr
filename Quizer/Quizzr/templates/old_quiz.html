@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Quiz
+        </title>
+    </head>
+
+    <style>
+
+    </style>
+
+    <body>
+        {% for query in queries %}
+        <p>
+            <div style="text-align: center;">
+            <strong>
+                {{query.question.text}}
+            </strong>
+            {% for answer in query.answers %}
+            <p>
+                {{answer.text}}
+                {% if answer.is_correct %}
+                    (is the correct answer)
+                {% endif %}
+            </p>
+            {% endfor %}
+            </div>
+        </p>
+        {% endfor %}
+    </body>
+</html>

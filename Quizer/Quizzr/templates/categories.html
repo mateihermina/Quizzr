@@ -1,0 +1,26 @@
+<html>
+
+    <head>
+        <title>Categories</title>
+    </head>
+
+    <style>
+        h1 {text-align: center;}
+    </style>
+
+    <body style="font-size: x-large;">
+        <h1>Choose your quiz category!</h1>
+        {% for category in categories %}
+            <p>
+                <!-- <div style="text-align: center;">
+                <strong>
+                    {{category.category_name}}
+                </strong>
+                {{category.category_description}}
+                </div> -->
+                <a href = "{% url 'quiz' category.id %}">{{category.category_name}}</a>
+            </p>
+        {% endfor %}
+    </body>
+
+</html>

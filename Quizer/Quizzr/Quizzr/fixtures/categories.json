@@ -1,0 +1,29 @@
+[{
+  "model": "Quizzr.category",
+  "pk": 1,
+  "fields": {
+    "category_name": "Programming",
+    "category_description": "Test your programming knowledge"
+  }
+},{
+  "model": "Quizzr.category",
+  "pk": 2,
+  "fields": {
+    "category_name": "General Knowledge",
+    "category_description": "Test your general knowledge"
+  }
+}, {
+  "model": "Quizzr.category",
+  "pk": 3,
+  "fields": {
+    "category_name": "Math & Physics",
+    "category_description": "Test your Math & Physics knowledge"
+  }
+},{
+  "model": "Quizzr.category",
+  "pk": 4,
+  "fields": {
+    "category_name": "Movies",
+    "category_description": "Test your cinematographic knowledge"
+  }
+}]

@@ -1,0 +1,90 @@
+[
+  {
+    "model": "Quizzr.question",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "text": "Which C++ library includes the sort method?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "text": "Which data structure allows element access in O(1) time by value?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "text": "Which of the following frameworks is based on Java?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "text": "Which type of distance is longer, Manhattan or Eulerian?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "text": "Which of the following searches finds the shortest path in an unordered graph?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 6,
+    "fields": {
+      "category": 1,
+      "text": "Which algorithm does Kruskal's algorithm use?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 7,
+    "fields": {
+      "category": 1,
+      "text": "Which programming language is the .NET Framework based on?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 8,
+    "fields": {
+      "category": 1,
+      "text": "Which character code unit does the C++ wchar_t type hold?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 9,
+    "fields": {
+      "category": 1,
+      "text": "Which language supports v[-1] as the last element of v?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 10,
+    "fields": {
+      "category": 1,
+      "text": "In Java, what is the difference between int and Integer?"
+    }
+  },
+  {
+    "model": "Quizzr.question",
+    "pk": 11,
+    "fields": {
+      "category": 1,
+      "text": "In Python, what is the optional parameter of the input function?"
+    }
+  }
+]

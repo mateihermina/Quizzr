@@ -1,0 +1,55 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Quizzr</title>
+    </head>
+    <style>
+        body {
+            background-image: url("{% static 'hermina.jpg' %}");
+            background-repeat: no-repeat;
+            color: #cc6ce5;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        a:link {
+          color: #724d7c;
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+        a:visited {
+          color: #eab7f1;
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #910a4f;
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+        a:active {
+          color: #4c168f;
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+    </style>
+    <body>
+        <h1 style="font-size: xx-large; text-align: center">
+            {% if user.is_authenticated %}
+                Welcome to the Quizzr Homepage, {{user.username}}!
+            {% else %}
+                Welcome to the Quizzr Homepage!
+            {% endif %}
+        </h1>
+        <div style="text-align: center; color: #eab7f1">
+            <a href="/accounts/login">Log in<br/></a>
+            <a href="/accounts/logout">Log out<br/></a>
+            <a href="/register">Sign up<br/></a>
+            <a href="categories">View Quiz Categories</a>
+        </div>
+    </body>
+</html>

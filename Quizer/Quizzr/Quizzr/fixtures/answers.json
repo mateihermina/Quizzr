@@ -1,0 +1,265 @@
+[{
+  "model": "Quizzr.answer",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "text": "cstdlib",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "text": "sort",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 3,
+  "fields": {
+    "question": 1,
+    "text": "algorithm",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 4,
+  "fields": {
+    "question": 2,
+    "text": "Vector",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 5,
+  "fields": {
+    "question": 2,
+    "text": "Hash Table",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 6,
+  "fields": {
+    "question": 2,
+    "text": "Heap",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 7,
+  "fields": {
+    "question": 3,
+    "text": "Unity",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 8,
+  "fields": {
+    "question": 3,
+    "text": "Android Studio",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 9,
+  "fields": {
+    "question": 3,
+    "text": "DirectX",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 10,
+  "fields": {
+    "question": 4,
+    "text": "Manhattan",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 11,
+  "fields": {
+    "question": 4,
+    "text": "Eulerian",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 12,
+  "fields": {
+    "question": 4,
+    "text": "They're the same",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 13,
+  "fields": {
+    "question": 5,
+    "text": "BFS",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 14,
+  "fields": {
+    "question": 5,
+    "text": "DFS",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 15,
+  "fields": {
+    "question": 5,
+    "text": "Binary Search",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 16,
+  "fields": {
+    "question": 6,
+    "text": "Roy-Floyd",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 17,
+  "fields": {
+    "question": 6,
+    "text": "Dijkstra",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 18,
+  "fields": {
+    "question": 6,
+    "text": "Union-Find",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 19,
+  "fields": {
+    "question": 7,
+    "text": "C++",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 20,
+  "fields": {
+    "question": 7,
+    "text": "C#",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 21,
+  "fields": {
+    "question": 7,
+    "text": "Python",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 22,
+  "fields": {
+    "question": 8,
+    "text": "UTF-8",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 23,
+  "fields": {
+    "question": 8,
+    "text": "UTF-16",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 24,
+  "fields": {
+    "question": 8,
+    "text": "UTF-32",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 25,
+  "fields": {
+    "question": 9,
+    "text": "Python",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 26,
+  "fields": {
+    "question": 9,
+    "text": "C++",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 27,
+  "fields": {
+    "question": 9,
+    "text": "Java",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 28,
+  "fields": {
+    "question": 10,
+    "text": "The declaration of int inherits Integer, which is abstract",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 29,
+  "fields": {
+    "question": 10,
+    "text": "One is passed by refference, one is passed by value",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 30,
+  "fields": {
+    "question": 10,
+    "text": "Integer cannot be cast into a floating-point type",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 31,
+  "fields": {
+    "question": 11,
+    "text": "The maximum buffer length",
+    "is_correct": false
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 32,
+  "fields": {
+    "question": 11,
+    "text": "An optional prompt",
+    "is_correct": true
+  }
+},{
+  "model": "Quizzr.answer",
+  "pk": 33,
+  "fields": {
+    "question": 11,
+    "text": "The expected input data type",
+    "is_correct": false
+  }
+}]

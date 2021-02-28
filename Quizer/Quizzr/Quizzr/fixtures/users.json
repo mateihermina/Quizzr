@@ -1,0 +1,127 @@
+[{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "first_name": "Mihai",
+    "last_name": "Vladu",
+    "email": "mihai.vladu@scoalainformala.ro",
+    "username": "mihai.vladu@scoalainformala.ro",
+    "is_superuser": 1,
+    "is_staff": 1,
+    "password": "pbkdf2_sha256$216000$n4a8TBs0YbbN$b0BjstEtqDVnzkhVVZfW0WyLb6T9ePCEeQtyv7O1sBY="
+  }
+}, {
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "first_name": "Bill",
+    "last_name": "Gates",
+    "email": "bill.gates@test.com",
+    "username": "bill.gates@test.com",
+    "is_superuser": 0,
+    "is_staff": 1,
+    "password": "pbkdf2_sha256$216000$n4a8TBs0YbbN$b0BjstEtqDVnzkhVVZfW0WyLb6T9ePCEeQtyv7O1sBY="
+  }
+}, {
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "first_name": "Mark",
+    "last_name": "Zuckerberg",
+    "email": "mark.zuckerberg@test.com",
+    "username": "mark.zuckerberg@test.com",
+    "is_superuser": 0,
+    "is_staff": 1,
+    "password": "pbkdf2_sha256$216000$n4a8TBs0YbbN$b0BjstEtqDVnzkhVVZfW0WyLb6T9ePCEeQtyv7O1sBY="
+  }
+}, {
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "first_name": "Ion",
+    "last_name": "Popescu",
+    "email": "ion.popescu@gmail.com",
+    "username": "ion.popescu@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "first_name": "George",
+    "last_name": "Vasile",
+    "email": "george.vasile@gmail.com",
+    "username": "george.vasile@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "first_name": "George",
+    "last_name": "Serban",
+    "email": "george.serban@gmail.com",
+    "username": "george.serban@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "first_name": "Ion",
+    "last_name": "Matei",
+    "email": "ion.matei@gmail.com",
+    "username": "ion.matei@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 8,
+  "fields": {
+    "first_name": "Ionut",
+    "last_name": "Ilie",
+    "email": "ionut.ilie@gmail.com",
+    "username": "ionut.ilie@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "first_name": "Claudiu",
+    "last_name": "Vasile",
+    "email": "claudiu.vasile@gmail.com",
+    "username": "claudiu.vasile@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 9,
+  "fields": {
+    "first_name": "Ioan",
+    "last_name": "Pricop",
+    "email": "ioan.pricop@gmail.com",
+    "username": "ioan.pricop@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 10,
+  "fields": {
+    "first_name": "Ionut",
+    "last_name": "Georgescu",
+    "email": "ionut.georgescu@gmail.com",
+    "username": "ionut.georgescu@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 11,
+  "fields": {
+    "first_name": "Sebastian",
+    "last_name": "Istrate",
+    "email": "sebastian.istrate@gmail.com",
+    "username": "sebastian.istrate@gmail.com"
+  }
+}, {
+  "model": "auth.user",
+  "pk": 12,
+  "fields": {
+   "first_name": "Viorel",
+    "last_name": "Enache",
+    "email": "viore.enache@gmail.com",
+    "username": "viore.enache@gmail.com"
+  }
+}]

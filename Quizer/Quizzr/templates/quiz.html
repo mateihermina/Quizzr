@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="question_text"></p>
+<p><button onclick="user_answers[question_index] = answers[question_index][0]; check_answer()" id="answer0"></button></p>
+<p><button onclick="user_answers[question_index] = answers[question_index][1]; check_answer()" id="answer1"></button></p>
+<p><button onclick="user_answers[question_index] = answers[question_index][2]; check_answer()" id="answer2"></button></p>
+
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+const n_questions = 3;
+const n_answers = 3;
+
+var question_text = [];
+var answers = [];
+var correct_answers = [];
+var points = 0;
+var question_id = [];
+
+{% if user.is_authenticated %}
+    alert("The quiz will start, {{user.username}}");
+{% else %}
+    alert("You are not authenticated!");
+{% endif %}
+
+{% for query in queries %}
+    question_text.push('{{ query.question.text }}');
+    question_id.push('{{ query.question.id }}');
+
+    var aux = [];
+    {% for answer in query.answers %}
+        aux.push('{{ answer.text }}');
+    {% endfor %}
+    answers.push(aux);
+
+    correct_answers.push('{{ query.correct_answer.text }}');
+{% endfor %}
+
+var user_answers = ["Error: Missing Answer",
+					"Error: Missing Answer",
+					"Error: Missing Answer"];
+
+var question_index = 0;
+
+function print_question(){
+	document.getElementById("question_text").innerHTML = question_text[question_index];
+	document.getElementById("answer0").innerHTML = answers[question_index][0];
+	document.getElementById("answer1").innerHTML = answers[question_index][1];
+	document.getElementById("answer2").innerHTML = answers[question_index][2];
+}
+
+function check_answer(){
+	if(user_answers[question_index] == correct_answers[question_index]) {
+        alert("Correct!");
+        points +=10;
+    }
+	else
+		alert("Incorrect!");
+
+	question_index++;
+
+	if(question_index < 3)
+		print_question();
+	else {
+	    update_total_score();
+
+        var offer_feedback = confirm("The Quiz has ended\nWould you like to offer some feedback on the quiz?");
+		if(offer_feedback) {
+		    feedback();
+		}
+		else {
+		    end_quiz();
+        }
+	}
+}
+
+function update_total_score() {
+    var data = {'to_add': points};
+
+    $.post("{% url 'update_total_score' %}",
+            data,
+            function(response){
+                if(response === 'success'){ alert('Yay!'); }
+                else{ alert('Error! :('); }
+            });
+}
+
+
+var feedback_question_index = 0;
+var feedback_text = [];
+function feedback() {
+    if(feedback_question_index >= n_questions)
+        end_quiz();
+
+    document.body.innerHTML = '';
+
+    document.write("Question #" +
+                    (feedback_question_index + 1) +
+                    "<br/>" +
+                    question_text[feedback_question_index] +
+                    "<br/>");
+
+    document.write("Correct answer: "+
+                    correct_answers[feedback_question_index]+
+                    "<br/>");
+
+    var like = document.createElement("BUTTON");
+    like.innerHTML = "Like <br/>";
+    like.addEventListener("click", function() {
+        feedback_question_index++;
+        feedback_text.push("Like");
+        feedback();
+    });
+    document.body.appendChild(like);
+    document.write("<br/>");
+
+    var dislike = document.createElement("BUTTON");
+    dislike.innerHTML = "Dislike";
+    dislike.addEventListener("click", function() {
+        feedback_question_index++;
+        feedback_text.push("Dislike");
+        feedback();
+    });
+    document.body.appendChild(dislike);
+    document.write("<br/>");
+
+    var report = document.createElement("BUTTON");
+    report.innerHTML = "Report";
+    report.addEventListener("click", function() {
+        feedback_question_index++;
+        feedback_text.push("Report");
+        feedback();
+    });
+    document.body.appendChild(report);
+    document.write("<br/>");
+}
+
+function end_quiz() {
+    if(feedback_question_index >= n_questions) {
+        var output = "Feedback:\n";
+        for (var pos = 0; pos < n_questions; pos++)
+            output = output + feedback_text[pos] + "\n";
+        update_feedback();
+    }
+
+    var restart = confirm("End Of Quiz! You won " + points +" points\nRestart Quiz?");
+
+    if (restart) {
+        location.reload();
+    }
+    else {
+        window.location.replace("/");
+    }
+
+
+}
+
+function update_feedback() {
+    var feedback = {'feedback[]': feedback_text,
+                    'question_id[]': question_id};
+    $.post("{% url 'update_feedback' %}",
+            feedback,
+            function(response){
+                if(response === 'success'){ alert('Succes!'); }
+                else {
+                    alert(response);
+                    alert('Error! :(');
+                }
+            });
+
+}
+print_question();
+</script>
+
+</body>
+</html>
